@@ -1,0 +1,35 @@
+<!DOCTYPE html><html><head>
+    <script src="p5.js"></script>
+    <script src="p5.dom.min.js"></script>
+    <script src="p5.sound.min.js"></script>
+<script src="./p5.play.js"></script>
+<title>Amey Web Player</title>
+    <link rel="shortcut icon" href="ameywebplayerlogotransparentcropped.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+
+  </head>
+  <body>
+      
+    
+
+    <div class="loader">
+        <image src ="ameywebplayerlogoresizedsmall.png"></image>
+     </div>
+      
+
+      <script>
+        const loader = document.querySelector(".loader");
+        window.onload = function(){
+          setTimeout(function(){
+            loader.style.opacity = "0";
+            setTimeout(function(){
+              loader.style.display = "none";
+            }, 500);
+          },10000);
+        }
+     </script>
+     <script src="sketch.js"></script>
+  
+
+</body></html>
